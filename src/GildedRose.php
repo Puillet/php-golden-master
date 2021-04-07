@@ -64,6 +64,12 @@ final class GildedRose
                     }
                 }
             }
+
+            if($item->name === 'Conjured Mana Cake') {
+                if ($item->quality > 0) {
+                    --$item->quality;
+                }
+            }
         }
     }
 }
